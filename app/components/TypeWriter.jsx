@@ -6,7 +6,7 @@ export function Typewriter() {
       text: "We",
     },
     {
-      text: "Deals",
+      text: "Deal",
     },
     
     {
