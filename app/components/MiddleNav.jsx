@@ -13,21 +13,23 @@ const MiddleNav = () => {
   ];
 
   return (
-    <nav className="bg-gray-300 w-full">
-      <div className="flex justify-between max-w-5xl mx-auto py-4">
-        {/* Map over the navItems array and generate <a> elements */}
-        {navItems.map((item, index) => (
-          <a
-            key={index}
-            href={`/${item}`} // Assuming each item corresponds to a route
-            className="text-gray-800 hover:text-black px-4 py-2 rounded-lg flex items-center"
-          >
-            {item}
-            <FaAngleDown className="ml-1" />
-          </a>
-        ))}
-      </div>
-    </nav>
+    <div className="hidden sm:block"> {/* Hide on small screens */}
+      <nav className="bg-gray-300 w-full">
+        <div className="flex justify-between max-w-5xl mx-auto py-4 ">
+          {/* Map over the navItems array and generate <a> elements */}
+          {navItems.map((item, index) => (
+            <a
+              key={index}
+              href={`/${item}`} // Assuming each item corresponds to a route
+              className="text-gray-800 hover:text-black px-4 py-2 rounded-lg flex items-center"
+            >
+              {item}
+              <FaAngleDown className="ml-1" />
+            </a>
+          ))}
+        </div>
+      </nav>
+    </div>
   );
 }
 

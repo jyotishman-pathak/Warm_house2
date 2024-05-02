@@ -16,9 +16,12 @@ const Hero = () => {
   return (
     <nav>
     
-      <div className="flex flex-wrap justify-center  items-center gap  ">
+      <div className="flex flex-wrap justify-center  items-center   ">
         {Object.keys(images[0]).map((item, index) => (
-          <img key={index} src={images[0][item]} alt={item} className="m-2" />
+          <div className=" flex  ">
+            <img  key={index} src={images[0][item]} alt={item} className="m-2" />
+          </div>
+          
         ))}
       </div>
     </nav>

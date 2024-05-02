@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavbarUp from "./components/NavbarUp";
 import MiddleNav from "./components/MiddleNav";
-import Hero from "./components/HeroNav";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
       <NavbarUp/>
     <MiddleNav/>
-    <Hero />
+  
 
         {children}</body>
     </html>

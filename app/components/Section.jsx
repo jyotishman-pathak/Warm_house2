@@ -1,4 +1,4 @@
-import { cn } from "@/utils/cn";
+import { cn } from "../../utils/cn";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid"
 import {
@@ -32,7 +32,7 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: "The Dawn of Innovation",
+    title: "Boxers",
     description: "Explore the birth of groundbreaking ideas and inventions.",
     header: <Skeleton />,
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
