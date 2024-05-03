@@ -29,27 +29,19 @@ const Shirt = () => {
   ];
 
   return (
-    <div className="">
-      <div className='flex items-center justify-evenly'>
-        {details.map((item) => (
-          <div key={item.id}>
-           <div className="h-[418px] w-[279px] flex  border-b-7 ">
-           <img src={item.image} alt={item.name} />
-           </div>
-           
-            <div>
-              <div >
-              <p>{item.name}</p>
-              <b>{item.price}</b>
-              </div>
-              
-              <button className='bg-black w-[279px] text-white rounded'>ADD TO CART</button>
+    <div className="flex flex-wrap justify-center items-center">
+      {details.map((item) => (
+        <div key={item.id} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 p-4">
+          <div className="flex flex-col items-center border border-gray-300 rounded-lg overflow-hidden">
+            <img src={item.image} alt={item.name} className="w-full h-auto" />
+            <div className="p-4">
+              <p className="text-lg font-bold">{item.name}</p>
+              <p className="text-gray-700">Price: ${item.price}</p>
+              <button className="bg-black text-white rounded-md px-4 py-2 mt-4 w-full">ADD TO CART</button>
             </div>
           </div>
-        ))}
-      </div>
-      
-      
+        </div>
+      ))}
     </div>
   );
 };
